@@ -1,21 +1,14 @@
 {
-  "name": "microserve",
+  "name": "vue-microserve",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "concurrently \"vue-cli-service serve\" \"npm run start:vue\" \"npm run start:react\"",
-    "install:subApplication": "cd subApplication/vue-microserve && npm i && cd ../react-microserve && npm i",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start:vue": "cd subApplication/vue-microserve && npm run serve",
-    "start:react": "cd subApplication/react-microserve && npm start",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "ant-design-vue": "^1.4.3",
-    "babel-plugin-import": "^1.12.2",
-    "concurrently": "^5.0.0",
     "core-js": "^3.3.2",
-    "less": "^3.10.3",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -25,8 +18,6 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "less-loader": "^5.0.0",
-    "qiankun": "^1.2.3",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
